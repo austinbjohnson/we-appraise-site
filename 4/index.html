@@ -12,6 +12,10 @@
         body { background: #FAF3E0; color: #2C1810; font-family: 'Source Sans 3', system-ui, sans-serif; }
         nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; max-width: 1000px; margin: 0 auto; }
         nav strong { font-family: 'Playfair Display', serif; font-size: 1.25rem; }
+        nav strong a { color: inherit; text-decoration: none; }
+        nav .designs { display: flex; gap: 0.5rem; margin-left: auto; }
+        nav .designs a { color: #a89880; text-decoration: none; font-size: 0.8125rem; font-weight: 600; padding: 0.25rem 0.5rem; }
+        nav .designs a:hover, nav .designs a.active { color: #C75B39; }
         .hero { max-width: 800px; margin: 0 auto; padding: 5rem 2rem 4rem; text-align: center; }
         h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.15; margin-bottom: 1.5rem; color: #2C1810; }
         .hero p { font-size: 1.125rem; color: #5C4A3A; line-height: 1.7; margin-bottom: 2.5rem; max-width: 580px; margin-left: auto; margin-right: auto; }
@@ -29,7 +33,7 @@
     </style>
 </head>
 <body>
-    <nav><strong>We Appraise</strong></nav>
+    <nav><strong><a href="../">We Appraise</a></strong><div class="designs"><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a><a class="active" href="../4/">4</a><a href="../5/">5</a></div></nav>
     <section class="hero">
         <h1>The property is your office. Your tools should know that.</h1>
         <p>Real estate appraisers spend half their time on-site and the other half re-entering data. We Appraise brings AI to the field so you can capture, organize, and draft — right where the work happens.</p>

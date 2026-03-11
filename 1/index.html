@@ -16,11 +16,16 @@
         .points li span { color: #FF5722; margin-right: 0.75rem; font-weight: bold; }
         .cta { display: inline-block; background: #FF5722; color: #000; font-weight: 900; font-size: 1.125rem; text-decoration: none; padding: 1.125rem 2.5rem; text-transform: uppercase; letter-spacing: 0.05em; border: none; }
         .cta:hover { background: #fff; }
+        nav { display: flex; align-items: center; gap: 1rem; padding: 1.25rem 2rem; font-family: 'Courier New', monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 1px solid #222; }
+        nav a { color: #777; text-decoration: none; }
+        nav a:hover, nav a.active { color: #FF5722; }
+        nav .brand { color: #fff; font-weight: bold; margin-right: auto; font-size: 0.875rem; text-decoration: none; }
         footer { padding: 2rem; text-align: center; font-family: 'Courier New', monospace; font-size: 0.75rem; color: #444; border-top: 1px solid #222; }
         @media (max-width: 600px) { .hero { padding: 2rem 1.25rem; } }
     </style>
 </head>
 <body>
+    <nav><a class="brand" href="../">We Appraise</a><a class="active" href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a><a href="../4/">4</a><a href="../5/">5</a></nav>
     <section class="hero">
         <h1>Stop typing.<br><span>Start appraising.</span></h1>
         <p class="sub">You're the expert. You shouldn't be wrestling with data entry on-site. We Appraise uses AI to capture property data and draft your reports — so you can focus on what you actually know.</p>
