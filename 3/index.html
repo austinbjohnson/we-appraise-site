@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Appraise — AI for Real Estate Appraisers</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: system-ui, -apple-system, sans-serif; background: #1a1a1a; color: #fff; min-height: 100vh; }
+        .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; }
+        .left { background: #1a1a1a; display: flex; flex-direction: column; justify-content: center; padding: 4rem 3rem; }
+        .right { background: #00E676; color: #111; display: flex; flex-direction: column; justify-content: center; padding: 4rem 3rem; }
+        .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: #00E676; margin-bottom: 1.5rem; }
+        h1 { font-size: clamp(2.25rem, 4vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; }
+        .left p { color: #bbb; font-size: 1.0625rem; line-height: 1.7; margin-bottom: 1.5rem; max-width: 480px; }
+        .points { list-style: none; }
+        .points li { padding: 0.5rem 0; font-size: 0.9375rem; color: #999; }
+        .points li::before { content: '\25A0'; color: #00E676; margin-right: 0.75rem; }
+        .right h2 { font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem; }
+        .right p { font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; color: #1a1a1a; opacity: 0.8; }
+        .cta { display: inline-block; background: #111; color: #00E676; font-weight: 700; font-size: 1rem; text-decoration: none; padding: 1rem 2.25rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .cta:hover { background: #000; }
+        .shape { width: 120px; height: 120px; background: rgba(0,0,0,0.1); margin-top: 3rem; }
+        footer { grid-column: 1 / -1; padding: 1.5rem; text-align: center; font-size: 0.75rem; color: #555; background: #111; }
+        @media (max-width: 768px) {
+            .split { grid-template-columns: 1fr; }
+            .left, .right { padding: 3rem 1.5rem; }
+            .shape { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="split">
+        <section class="left">
+            <span class="tag">For Real Estate Appraisers</span>
+            <h1>Appraisals are hard enough without the paperwork</h1>
+            <p>You're on-site, juggling measurements, photos, comps, and notes. Then you go back to the office and type it all up. Again. We Appraise changes that.</p>
+            <ul class="points">
+                <li>AI-powered on-site data capture</li>
+                <li>Auto-generated report drafts</li>
+                <li>Your judgment, zero busywork</li>
+            </ul>
+        </section>
+        <section class="right">
+            <h2>Be first in line</h2>
+            <p>We're building the iOS app real estate appraisers have been waiting for. Get early access and shape the product with your feedback.</p>
+            <a class="cta" href="mailto:hello@weappraise.com?subject=We%20Appraise%20Early%20Access&body=I%27d%20like%20early%20access%20to%20We%20Appraise.">Get Early Access</a>
+            <div class="shape" aria-hidden="true"></div>
+        </section>
+        <footer>&copy; 2026 We Appraise</footer>
+    </div>
+</body>
+</html>
