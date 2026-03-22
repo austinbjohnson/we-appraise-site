@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Appraise — AI for Real Estate Appraisers</title>
+    <title>We Appraise - Dental Practice Appraisal Workflow</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: system-ui, -apple-system, sans-serif; background: #1a1a1a; color: #fff; min-height: 100vh; }
@@ -15,21 +15,21 @@
         .left { background: #1a1a1a; display: flex; flex-direction: column; justify-content: center; padding: 4rem 3rem; }
         .right { background: #00E676; color: #111; display: flex; flex-direction: column; justify-content: center; padding: 4rem 3rem; }
         .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: #00E676; margin-bottom: 1.5rem; }
-        h1 { font-size: clamp(2.25rem, 4vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; }
-        .left p { color: #bbb; font-size: 1.0625rem; line-height: 1.7; margin-bottom: 1.5rem; max-width: 480px; }
-        .points { list-style: none; }
+        h1 { font-size: clamp(2.25rem, 4vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; max-width: 10ch; }
+        .left p { color: #bbb; font-size: 1.0625rem; line-height: 1.7; margin-bottom: 1.5rem; max-width: 560px; }
+        .points { list-style: none; max-width: 560px; }
         .points li { padding: 0.5rem 0; font-size: 0.9375rem; color: #999; }
         .points li::before { content: '\25A0'; color: #00E676; margin-right: 0.75rem; }
-        .right h2 { font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem; }
-        .right p { font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; color: #1a1a1a; opacity: 0.8; }
+        .right h2 { font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem; max-width: 11ch; }
+        .right p { font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; color: #1a1a1a; opacity: 0.82; max-width: 460px; }
         .cta { display: inline-block; background: #111; color: #00E676; font-weight: 700; font-size: 1rem; text-decoration: none; padding: 1rem 2.25rem; text-transform: uppercase; letter-spacing: 0.05em; }
         .cta:hover { background: #000; }
-        .shape { width: 120px; height: 120px; background: rgba(0,0,0,0.1); margin-top: 3rem; }
+        .app-icon { width: 112px; height: 112px; margin-top: 1.5rem; border-radius: 24px; display: block; box-shadow: 0 16px 40px rgba(0,0,0,0.18); }
         footer { grid-column: 1 / -1; padding: 1.5rem; text-align: center; font-size: 0.75rem; color: #555; background: #111; }
         @media (max-width: 768px) {
             .split { grid-template-columns: 1fr; }
             .left, .right { padding: 3rem 1.5rem; }
-            .shape { display: none; }
+            h1, .right h2 { max-width: none; }
         }
     </style>
 </head>
@@ -37,20 +37,20 @@
     <nav><a class="brand" href="../">We Appraise</a><a class="num" href="../1/">1</a><a class="num" href="../2/">2</a><a class="num active" href="../3/">3</a><a class="num" href="../4/">4</a><a class="num" href="../5/">5</a></nav>
     <div class="split">
         <section class="left">
-            <span class="tag">For Real Estate Appraisers</span>
-            <h1>Appraisals are hard enough without the paperwork</h1>
-            <p>You're on-site, juggling measurements, photos, comps, and notes. Then you go back to the office and type it all up. Again. We Appraise changes that.</p>
+            <span class="tag">For Dental Practice Appraisers</span>
+            <h1>Appraisals are hard enough without all the paperwork</h1>
+            <p>Stop juggling paper forms, camera-roll photos, and handwritten notes. Capture the walkthrough in one place and leave knowing you got everything.</p>
             <ul class="points">
-                <li>AI-powered on-site data capture</li>
-                <li>Auto-generated report drafts</li>
-                <li>Your judgment, zero busywork</li>
+                <li>Guided room-by-room capture</li>
+                <li>Photos, notes, and details stay organized</li>
+                <li>From site visit to same-day review</li>
             </ul>
         </section>
         <section class="right">
-            <h2>Be first in line</h2>
-            <p>We're building the iOS app real estate appraisers have been waiting for. Get early access and shape the product with your feedback.</p>
-            <a class="cta" href="mailto:hello@weappraise.com?subject=We%20Appraise%20Early%20Access&body=I%27d%20like%20early%20access%20to%20We%20Appraise.">Get Early Access</a>
-            <div class="shape" aria-hidden="true"></div>
+            <h2>Faster handoff. Fewer loose ends.</h2>
+            <p>Built for dental practice appraisers who want to finish faster, avoid re-entry, and deliver a sharper appraisal experience.</p>
+            <a class="cta" href="mailto:hello@weappraise.com?subject=We%20Appraise%20Early%20Access&body=I%27d%20like%20early%20access%20to%20We%20Appraise.">Join the Waitlist</a>
+            <img class="app-icon" src="../app-icon.png" alt="We Appraise app icon">
         </section>
         <footer>&copy; 2026 We Appraise</footer>
     </div>

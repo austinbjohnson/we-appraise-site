@@ -3,28 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Appraise — Design Concepts</title>
+    <title>We Appraise - Dental Practice Appraisal Workflow</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: system-ui, -apple-system, sans-serif; background: #111; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; }
-        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-        p { color: #888; margin-bottom: 2.5rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; max-width: 900px; width: 100%; }
-        a { display: block; padding: 2rem; border: 2px solid #333; text-decoration: none; color: #fff; transition: border-color 0.2s; }
-        a:hover { border-color: #fff; }
-        a strong { display: block; font-size: 1.25rem; margin-bottom: 0.5rem; }
-        a span { color: #999; font-size: 0.875rem; }
+        body { font-family: system-ui, -apple-system, sans-serif; background: #1a1a1a; color: #fff; min-height: 100vh; }
+        .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; }
+        .left { background: #1a1a1a; display: flex; flex-direction: column; justify-content: center; padding: 4rem 3rem; }
+        .right { background: #00E676; color: #111; display: flex; flex-direction: column; justify-content: center; padding: 4rem 3rem; }
+        .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: #00E676; margin-bottom: 1.5rem; }
+        h1 { font-size: clamp(2.25rem, 4vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; max-width: 10ch; }
+        .left p { color: #bbb; font-size: 1.0625rem; line-height: 1.7; margin-bottom: 1.5rem; max-width: 560px; }
+        .points { list-style: none; max-width: 560px; }
+        .points li { padding: 0.5rem 0; font-size: 0.9375rem; color: #999; }
+        .points li::before { content: '\25A0'; color: #00E676; margin-right: 0.75rem; }
+        .right h2 { font-size: 1.75rem; font-weight: 800; margin-bottom: 1rem; max-width: 11ch; }
+        .right p { font-size: 1rem; line-height: 1.6; margin-bottom: 2rem; color: #1a1a1a; opacity: 0.82; max-width: 460px; }
+        .cta { display: inline-block; background: #111; color: #00E676; font-weight: 700; font-size: 1rem; text-decoration: none; padding: 1rem 2.25rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .cta:hover { background: #000; }
+        .app-icon { width: 112px; height: 112px; margin-top: 1.5rem; border-radius: 24px; display: block; box-shadow: 0 16px 40px rgba(0,0,0,0.18); }
+        footer { padding: 1.5rem; text-align: center; font-size: 0.75rem; color: #555; background: #111; }
+        @media (max-width: 768px) {
+            .split { grid-template-columns: 1fr; min-height: auto; }
+            .left, .right { padding: 3rem 1.5rem; }
+            h1, .right h2 { max-width: none; }
+        }
     </style>
 </head>
 <body>
-    <h1>We Appraise</h1>
-    <p>Landing page design concepts</p>
-    <div class="grid">
-        <a href="1/"><strong>1 — Dark Brutalist</strong><span>Black, electric orange, oversized type, monospace</span></a>
-        <a href="2/"><strong>2 — Clean Corporate</strong><span>White, navy, teal accents, card layout</span></a>
-        <a href="3/"><strong>3 — Split Screen Bold</strong><span>Charcoal + green split, geometric, editorial</span></a>
-        <a href="4/"><strong>4 — Warm Earthy</strong><span>Cream, terracotta, serif headlines, grounded</span></a>
-        <a href="5/"><strong>5 — Neon Minimal</strong><span>Near-black, cyan neon, ultra-minimal</span></a>
+    <div class="split">
+        <section class="left">
+            <span class="tag">For Dental Practice Appraisers</span>
+            <h1>Appraisals are hard enough without all the paperwork</h1>
+            <p>Stop juggling paper forms, camera-roll photos, and handwritten notes. Capture the walkthrough in one place and leave knowing you got everything.</p>
+            <ul class="points">
+                <li>Guided room-by-room capture</li>
+                <li>Photos, notes, and details stay organized</li>
+                <li>From site visit to same-day review</li>
+            </ul>
+        </section>
+        <section class="right">
+            <h2>Faster handoff. Fewer loose ends.</h2>
+            <p>Built for dental practice appraisers who want to finish faster, avoid re-entry, and deliver a sharper appraisal experience.</p>
+            <a class="cta" href="mailto:hello@weappraise.com?subject=We%20Appraise%20Early%20Access&body=I%27d%20like%20early%20access%20to%20We%20Appraise.">Join the Waitlist</a>
+            <img class="app-icon" src="app-icon.png" alt="We Appraise app icon">
+        </section>
     </div>
+    <footer>&copy; 2026 We Appraise</footer>
 </body>
 </html>
